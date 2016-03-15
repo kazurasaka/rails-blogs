@@ -1,0 +1,15 @@
+/Users/kazura/.anyenv/envs/rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160314-42870-1vgj1p4.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20160314-42870-1apvr7p/byebug
