@@ -26,10 +26,10 @@ ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
   # FactoryGirl.buildなどの呼び出しを、create, buildなどでメソッドが呼べる
-  config.include FactoryGirl::Syntax::Methods
+  # config.include FactoryGirl::Syntax::Methods
 
   # capybaraでvisit使おうとするとエラーが出るときに、下記を書く
-#  config.include Capybara::DSL
+  # config.include Capybara::DSL
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

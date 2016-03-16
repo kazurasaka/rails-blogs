@@ -25,6 +25,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'dotenv-rails', '2.0.2', require: 'dotenv/rails-now'
 
+# 画像ファイルアップロード関連
+gem 'carrierwave'
+gem 'rmagick'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
