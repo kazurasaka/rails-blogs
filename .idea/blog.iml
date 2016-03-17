@@ -373,6 +373,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.7), /Users/kazura/test/rails/blog/blog/vendor/bundle/gems/bcrypt-3.1.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bcrypt-3.1.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bcrypt-3.1.7/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bcrypt-3.1.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bcrypt-3.1.7/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="binding_of_caller (vbundled(0.7.2), /Users/kazura/test/rails/blog/blog/vendor/bundle/gems/binding_of_caller-0.7.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/binding_of_caller-0.7.2/ext" />
