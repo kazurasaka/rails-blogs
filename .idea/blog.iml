@@ -385,6 +385,22 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bootstrap-sass (vbundled(3.2.0.0), /Users/kazura/test/rails/blog/blog/vendor/bundle/gems/bootstrap-sass-3.2.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/templates" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.0/templates" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="builder (vbundled(3.2.2), /Users/kazura/test/rails/blog/blog/vendor/bundle/gems/builder-3.2.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/lib" />
