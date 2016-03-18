@@ -12,8 +12,9 @@ Rails.application.routes.draw do
   get 'signup/' => 'users#new'
   post 'signup/' => 'users#create'
   get 'users/:id/edit/' => 'users#edit'
-  get 'users/:id/destroy/' => 'users#destroy'
+  delete 'users/:id/destroy/' => 'users#destroy'
 
+  get 'posts/new' => 'posts#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
