@@ -11,10 +11,12 @@ Rails.application.routes.draw do
   delete 'logout/' => "sessions#destroy"
   get 'signup/' => 'users#new'
   post 'signup/' => 'users#create'
-  get 'users/:id/edit/' => 'users#edit'
-  delete 'users/:id/destroy/' => 'users#destroy'
+  # get 'users/:id/edit/' => 'users#edit'
+  # delete 'users/:id/destroy/' => 'users#destroy'
+  resources :users
 
   get 'posts/new' => 'posts#new'
+  get 'posts/:id/show' => 'posts#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

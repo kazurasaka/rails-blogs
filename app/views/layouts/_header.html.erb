@@ -6,7 +6,7 @@
         <% if logged_in? %>
             <li><%= @current_user.name %> さん</li>
             <li><%= link_to "記事を書く", posts_new_path %></li>
-            <li><%= link_to "アカウント編集", "#" %></li>
+            <li><%= link_to "アカウント編集", edit_user_path(current_user) %></li>
             <li><%= link_to "ログアウト", logout_path, method: "delete" %></li>
         <% else %>
             <li><%= link_to "Login", login_path %></li>
