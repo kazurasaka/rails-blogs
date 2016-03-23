@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.joins(:users, :comments).all
+    @post = Post.joins(:user).merge(Post.order(updated_at: :desc)).all
   end
 
   def new
@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.joins(:user).where(id: params[:id])
   end
 
   private

@@ -1,3 +1,15 @@
 <% provide(:title, "記事一覧") %>
-<h1>記事一覧</h1>
-<%= debug(@post) %>
+<% @post.each do |post| %>
+    <div class="article">
+      <h1><%= post.title %></h1>
+      <span class="date"><%= post.created_at.strftime("%Y/%m/%d(#{%w(日 月 火 水 木 金 土)[post.created_at.wday]})") %></span>
+      <span class="name"><%= post.user.name %></span>
+      <div class="contentArea">
+        <% if post.image? %>
+            <div class="contentArea__image"><%= image_tag post.image.thumb.url %></div>
+        <% end %>
+        <%= post.content %>
+      </div>
+      <%= link_to "more", :controller => "posts", :id => post.id, :action => "show" %>
+    </div>
+<% end %>

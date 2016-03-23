@@ -1,2 +1,15 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<% @post.each do |post| %>
+    <% provide(:title, post.title) %>
+    <div class="article">
+      <h1><%= post.title %></h1>
+      <span class="date"><%= post.created_at.strftime("%Y/%m/%d(#{%w(日 月 火 水 木 金 土)[post.created_at.wday]})") %></span>
+      <span class="name"><%= post.user.name %></span>
+      <div class="contentArea">
+        <% if post.image? %>
+            <div class="contentArea__image"><%= image_tag post.image.url %></div>
+        <% end %>
+        <%= post.content %>
+      </div>
+    </div>
+    <%= link_to "home", root_path %>
+<% end %>

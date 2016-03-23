@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessor :remember_token
-  has_many :posts
-  has_many :comments
+  has_many :post
+  has_many :comment
 
   before_save { self.email = email.downcase }
 

@@ -47,6 +47,24 @@ body {
   padding: 15px 15px 15px 0;
 }
 
+/* article */
+.article {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  .date {
+    margin-right: 6px;
+  }
+}
+.contentArea {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  &__image {
+    margin-bottom: 10px;
+  }
+}
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
