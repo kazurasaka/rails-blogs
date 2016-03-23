@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :users
 
   get 'posts/new' => 'posts#new'
+  post 'posts/create' => 'posts#create'
   get 'posts/:id/show' => 'posts#show'
 
   # Example of regular route:

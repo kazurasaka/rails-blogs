@@ -42,6 +42,11 @@ body {
   text-decoration: none;
 }
 
+.nav__name {
+  color: #ccc;
+  padding: 15px 15px 15px 0;
+}
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -68,6 +73,11 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.btn-delete {
+  margin-top: 40px;
+  float: right;
 }
 
 /* miscellaneous */

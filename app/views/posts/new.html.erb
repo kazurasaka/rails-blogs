@@ -1,2 +1,32 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<% provide(:title, "記事を書く") %>
+<h1 class="center">記事を書く</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@post, url: posts_create_path, html: { multipart: true }) do |f| %>
+
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
+
+        <%= f.label :content %>
+        <%= f.text_area :content, class: 'form-control' %>
+
+        <span class="image">
+          <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png' %>
+        </span>
+
+        <%= f.hidden_field :user_id, :value => @user.id %>
+
+        <%= f.submit "投稿", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('#post_image').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert('画像サイズが5MBを超えています。5MB以下にしてください。');
+    }
+  });
+</script>
